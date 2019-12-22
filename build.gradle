@@ -1,0 +1,19 @@
+plugins {
+    id "application"
+}
+apply plugin : "java"
+ext {
+javaMainClass = "emugiggle.Main"
+}
+ 
+application {
+    mainClassName = javaMainClass
+}
+
+repositories {
+  mavenCentral()    
+}
+
+dependencies {
+    implementation "org.apache.commons:commons-lang3:3.9"
+}
